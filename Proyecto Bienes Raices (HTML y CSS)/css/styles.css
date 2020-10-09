@@ -1,0 +1,406 @@
+html{
+    font-size: 62.5%; /*Reset para REM - 62.5% = 10px de 16px*/
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+
+/*Globales*/
+img{
+    max-width: 100%;
+}
+.contenedor {
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;/*Se Centra el Contenedor*/
+
+}
+
+h1{
+    font-size: 3.8rem;
+}
+h2{
+    font-size: 3.4rem;
+}
+h3{
+    font-size: 3rem;
+}
+h4{
+    font-size: 2.6rem;
+}
+
+
+
+/*Utilidades*/
+
+.contenido-centrado{
+    max-width: 80rem;
+}
+
+.seccion{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.fw-300{
+    font-weight: 300;
+}
+.centrar-texto{
+    text-align: center;
+}
+
+.d-block{
+    display: block!important;
+}
+
+/*Botones*/
+
+.boton{
+    color: #ffffff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    display: inline-block;
+    /*Las imagenes y los enlaces son display inline, asi que para darles
+    ancho, margen y alto, deben ser block o inline-block*/
+    margin-top: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    border: none; /*Los a no tienen borde pero submit si*/
+
+}
+
+.boton:hover{
+    cursor: pointer;
+}
+.boton-amarillo{
+    background-color: #E08709;
+
+}
+.boton-verde{
+background-color: #71B100;
+}
+
+
+/*Header*/
+.site-header{
+    background-color: #333333;
+    padding: 1rem 0 3rem 0;
+}
+
+.site-header.inicio{
+background-image: url(../img/header.jpg);
+background-position: center;
+background-size: cover; /*Cobre todo lo ancho y alto, respetando porporciones*/
+height: 100vh; /*De la pantalla*/
+min-height: 60rem;
+}
+
+.contenido-header{ /*Flex solo afecta al primer nivel de hijo*/
+    height: 100%; /*Toma toda la altura del header*/
+    display: flex;
+    flex-direction: column; /*Cambia el sentido del flex*/
+    justify-content: space-between; /*Ahora alinea verticalmente*/
+}
+
+.contenido-header h1{
+    color: #ffffff;
+    padding-bottom: 2rem;
+    max-width: 60rem;
+    line-height: 2;
+}
+
+.barra{
+    display: flex;
+    justify-content: space-between; /*Alinear Horizontalmente*/
+    padding-top: 3rem; /*Espacio hacia adentro del elemento*/
+    align-items: center; /*Alinear Verticalmente*/
+
+}
+
+
+/*Navegación*/
+
+.navegacion a{ /*Se selecciona la clase y los hijos de la clase*/
+color: #ffffff;
+text-decoration: none;
+font-size: 1.8rem; /*1 rem = 10px*/
+margin-right: 2rem;
+}
+
+.navegacion a:hover{
+    color: #71B100;
+}
+
+.navegacion a:last-of-type{/*El ultimo elemento de ese tipo*/
+    margin-right: 0;
+}
+
+/*iconos-nosotros*/
+
+.iconos-nosotros{
+    display: flex;
+    justify-content: space-between;
+}
+
+.iconos{
+    flex-basis: calc(33.3% - 1rem); /*Definir el ancho de cada flex*/
+    text-align: center;
+}
+
+.iconos h3{
+    text-transform: uppercase;
+}
+
+/*Anuncios de Departamentos*/
+
+.contenedor-anuncios{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.anuncios{
+    flex-shrink: 0; /*Para que mantenga el tamaño de la base*/
+    flex-basis: calc(33.3% - 1rem);
+    /*border-style: solid;
+    border-color: #B5B5B5;
+    border-width: 1px;*/
+
+    border: 1px solid #B5B5B5; /*width - style - color*/
+    background-color: #F5F5F5;
+    margin-bottom: 2rem; 
+}
+
+.contenido-anuncio{
+    padding: 2rem;
+}
+
+.contenido-anuncio h3, .contenido-anuncio p{
+    margin: 0;
+}
+.contenido-anuncio h3{
+    font-weight: 300;
+}
+
+.precio{
+    color: #71B100;
+    font-weight: 700;
+}
+
+.icono-caracteristicas{
+   list-style: none;
+   padding: 0;
+   display: flex; 
+   justify-content: space-evenly;
+   max-width: 50rem;
+   flex: 1;
+}
+.icono-caracteristicas li{
+    display: flex;
+}
+.icono-caracteristicas li img{
+    margin-right: 2rem;
+}
+
+.ver-todas{
+    display: flex;
+    justify-content: flex-end;
+}
+
+/*Contacto Index*/
+.imagen-contacto{
+    background-image: url(../img/encuentra.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 40rem;
+    display: flex;
+    align-items: center;
+}
+.contenido-contacto{
+    flex: 1; 
+    /*Detecta el tamaño del contenedor, lo divide entre la cantidad de
+    elementos y se lo asigna*/
+    color: #ffffff;
+}
+.contenido-contacto p {
+    font-size: 1.8rem;
+}
+
+/*Sección Inferior*/
+
+.seccion-inferior{
+    display: flex;
+    justify-content: space-between;
+}
+
+.seccion-inferior .blog{
+flex-basis: 60%;
+}
+
+.seccion-inferior .testimonios{
+    flex-basis: calc(40% - 2rem);
+
+}
+
+/*Blog*/
+.entrada-blog{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.entrada-blog:last-of-type{
+    margin-bottom: 0;
+}
+
+.entrada-blog .entrada-img{
+    flex-basis: 40%;
+}
+
+.entrada-blog .texto-entrada{
+    flex-basis: calc(60% - 3rem);
+}
+
+.texto-entrada a{
+    color: #000000;
+    text-decoration: none;
+}
+
+.texto-entrada h4{
+    margin: 0;
+    line-height: 1.4;
+}
+
+.texto-entrada h4::after{
+    /*Crea un pseudoelemento luego del h4*/
+    content: '';
+    display: block;
+    width: 15rem;
+    height: .5rem;
+    background-color: #71B100;
+    margin-top: 1rem;
+}
+
+.texto-entrada span{
+    color: #E08709;
+}
+
+/*Testimonios*/
+.testimonio{
+background-color: #71B100;
+font-size: 2.4rem;
+padding: 2rem;
+color: #ffffff;
+border-radius: 2rem;
+}
+
+.testimonio p {
+    text-align: right;
+}
+
+.testimonio blockquote::before{
+    content: '';
+    background-image: url(../img/comilla.svg);
+    width: 4rem;
+    height: 4rem;
+    position: absolute; 
+    /*Siempre que se usa absolute, el padre debe ser relative*/
+    top: 0;
+    left: -2rem;
+    /*Solo se pueden asignar con absolute*/
+}
+
+.testimonio blockquote{
+    position: relative;
+    padding-left: 5rem;
+    font-weight: 300;
+}
+
+/*Footer*/
+.site-footer{
+    background-color: #333333;
+    margin: 0;
+
+}
+
+.contenedor-footer{
+    padding: 3rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+.site-footer p{
+    margin: 0;
+    color: #ffffff;
+}
+
+/*INTERNAS*/
+
+.contenido-nosotros{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 2rem;
+}
+.texto-nosotros blockquote{
+    font-weight: 900;
+    font-size: 2rem;
+    margin: 0;
+    padding: 1rem 0 3rem 0;
+}
+
+.resumen-propiedad{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*Contacto*/
+.contacto p{
+    font-size: 1.4rem;
+    margin: 2rem 0 0 0;
+    color: #4f4f4f;
+}
+legend{
+    font-size: 2.4rem;
+    color: #4f4f4f;
+}
+label{
+    display: block;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+textarea{
+    resize: none;
+    height: 20rem;
+}
+
+input:not([type="submit"]), textarea, select{ /*Selector de Atributo*/
+    padding: 1rem;
+    display: block;
+    width: 97%;
+    background-color: #e1e1e1;
+    margin-bottom: 2rem;
+    border: none;
+    border-radius: 1rem;
+}
+input[type="radio"]{
+    width: auto;
+    margin: 0;
+}
+
+select{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+}
+
+.forma-contacto{
+    max-width: 30rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
