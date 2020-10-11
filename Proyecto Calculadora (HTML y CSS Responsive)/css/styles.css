@@ -1,0 +1,150 @@
+html{
+    font-size: 62.5%; /*Reinicia los rem. 1rem = 10px*/
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+/*Utilidades*/
+
+.no-margin{
+    margin: 0;
+}
+
+/*botones*/
+
+
+
+
+.contenedor{
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.imagen{
+    width: 95%;
+    max-width: 1200px;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(../imgs/fondo.svg);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 0 2rem 0;
+    border-radius: 1rem;
+}
+@media (max-width: 718px){
+    .imagen{
+        flex-direction: row-reverse;
+    }
+}
+
+/*PRIMER NIVEL*/
+.imagen h1{
+    color:#ffffff;
+    font-weight: 300;
+    font-size: 4rem;
+}
+
+.imagen h1 span{
+    font-weight: 900;
+}
+
+/*Segundo Nivel*/
+.calculadora{
+    width: 32rem;
+    height: 52rem;
+    background-color: #eaedef;
+    border-radius: 1rem;
+    box-shadow: 0 .4rem .8rem 0 rgba(0,0,0,0.2), 0 .6rem 2rem 0 rgba(0,0,0,0.19);
+}
+
+/*Tercer Nivel*/
+
+.resultado{
+    height: 12rem;
+}
+
+.teclas{
+    height: 40rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5,1fr);  
+}
+
+/*Resultados*/
+.historia{
+    text-align: right;
+    height: 2rem;
+    margin: 0 2rem;
+    padding-top: 2rem;
+    font-size: 1.5rem;
+    color: #919191;
+}
+.salida{
+    text-align: right;
+    height: 6rem;
+    margin: 1rem 2rem 0rem 2rem;
+    font-size: 3rem;
+}
+
+.linea{
+    border-top: 1px solid #a7a7a75d;
+    width: 90%;
+    padding: 0;
+    margin: 20px auto 0 auto;
+}
+
+/*Teclas*/
+
+.operador, .numero, .vacio{
+    width: 5rem;
+    height: 5rem;
+    align-self: center;
+    justify-self: center;
+    border-radius: 50%;
+    border-width: 0;
+    font-weight: bold;
+    font-size: 1.5rem;
+    outline: none;
+    
+}
+
+.numero, .vacio{
+    background-color:#eaedef;
+}
+.operador{
+    background-color: #a7a7a7;
+}
+
+.numero, .operador{
+    cursor: pointer;
+}
+
+.numero:active, .operador:active{
+    font-size: 1.3rem;
+    
+}
+
+#entre{
+    background-color: #8531e4;
+}
+#por{
+    background-color: #6c4ce0;
+}
+#menos{
+    background-color: #546bdc;
+}
+#mas{
+    background-color: #20a8d4;
+}
+#igual{
+    background-color: #54d6d9;
+}
