@@ -15,9 +15,6 @@ img{
 
 /*botones*/
 
-
-
-
 .contenedor{
     height: 100vh;
     font-family: 'Open Sans', sans-serif;
@@ -51,6 +48,12 @@ img{
     color:#ffffff;
     font-weight: 300;
     font-size: 4rem;
+}
+
+@media (max-width: 718px){
+    .imagen h1{
+        font-size: 3rem;;
+    }
 }
 
 .imagen h1 span{
