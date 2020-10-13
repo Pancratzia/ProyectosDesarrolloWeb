@@ -7,3 +7,5 @@ Proyecto Cafetería Responsive: https://pancratzia-pancrafe.netlify.app/
 Proyecto Calculadora Responsive: https://pancralculadora.netlify.app/
 
 Proyecto Bienes Raices Responsive: https://pancratzia-bienesraices-responsive.netlify.app/
+
+Proyecto Layout Blog de Viajes Responsive: https://pancratzia-layoutblogdeviajes.netlify.app
