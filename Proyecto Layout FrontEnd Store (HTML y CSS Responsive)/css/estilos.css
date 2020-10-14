@@ -1,0 +1,112 @@
+html{
+    height: 100%;
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body{
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e570e7+1,c85ec7+47,e570e7+47,c85ec7+47,a849a3+100 */
+    background: #e570e7; /* Old browsers */
+    background: -moz-linear-gradient(45deg,  #e570e7 1%, #c85ec7 47%, #e570e7 47%, #c85ec7 47%, #a849a3 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg,  #e570e7 1%,#c85ec7 47%,#e570e7 47%,#c85ec7 47%,#a849a3 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg,  #e570e7 1%,#c85ec7 47%,#e570e7 47%,#c85ec7 47%,#a849a3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e570e7', endColorstr='#a849a3',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    height: 100%; /*Para que no se repita la imagen o color de fondo*/
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+}
+img{
+    max-width: 100%;
+}
+
+header{
+    text-align: center;
+    padding: 4rem 0;
+}
+
+p, a{
+    font-size: 2.8rem;
+}
+
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.hero{
+    margin-bottom: 4rem;
+}
+
+h2{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3.6rem;
+}
+
+.lista-productos{
+    padding: 0;
+    list-style: none;
+}
+
+.lista-productos li{
+    float: left;
+    width: 50%;
+    padding: 2rem;
+    text-align: center;
+}
+
+.lista-productos li:nth-child(2n+1){
+    clear: both;
+}
+
+@media (min-width: 768px){
+    .lista-productos li{
+        width: 33.3%;
+    }
+    .lista-productos li:nth-child(2n+1){
+        clear: unset;
+    }
+    .lista-productos li:nth-child(3n+1){
+        clear: both;
+    }
+}
+
+.lista-productos li img{
+    border: 1rem solid rgba(128, 1, 195, .45);
+    transition: border-color .3s ease-in-out;
+}
+
+.lista-productos li img:hover{
+    border: 1rem solid rgba(128, 1, 195, 1);
+
+}
+
+.lista-productos li p{
+    font-weight: bold;
+    margin: 1rem 0 0 0;
+}
+
+span.precio{
+    color: #ffce00;
+    font-size: 4rem;
+}
+
+.boton{
+    background-color: #ffce00;
+    padding: 1rem 4rem;
+    display: inline-block; /*Para poder darle margen*/
+    margin-top: 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    color: #8001c3;
+    transition: background-color .3s ease-in-out;
+}
+
+.boton:hover{
+    background-color: #EBBC00;
+}
