@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Oswald:wght@300;400;700&display=swap');
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; 
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+img{
+    max-width: 100%;
+
+}
+
+h1,h2,h3, p{
+    margin: 0;
+}
+
+h2{
+    font-size: 4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: 'Oswald', sans-serif;
+}
+h2:hover{
+    scale: 0.9;
+}
+
+.body{
+    background-color: #e1e1e1;
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+}
+.contenedor{
+    width: 95%;
+    margin: 0 auto;
+    max-width: 120rem;
+
+}
+/*Utilidades*/
+
+.centrar{
+    text-align: center;
+}
+
+.transicion{
+    transition: all .3s ease-in-out;
+}
+
+/*boton*/
+
+.boton{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin: 2rem 0;
+    padding: 1rem 2rem;
+    background-color: #001e67;
+    font-size: 2rem;
+    border: none;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+}
+
+.boton:hover{
+    background-color: #01113b;
+}
+
+/*header*/
+
+
+.site-header{
+    background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url(https://mymodernmet.com/wp/wp-content/uploads/2017/05/van-gogh-starry-night-thumbnail-big.jpg);
+    height: 70rem;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#img-div{
+    padding-top: 10rem;
+}
+
+.site-header .contenedor img{
+    width: 50rem;
+    margin-bottom: 5rem;
+    object-fit: cover;
+    border-radius: 50%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.site-header .contenedor img:hover{
+    scale: 1.1;
+    border: 5px solid rgba(255,255,255,.6);
+}
+
+.site-header .contenedor h1{
+    color: white;
+    text-transform: uppercase;
+    font-size: 5rem;
+    font-weight: 700;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+.site-header .contenedor p{
+
+    color: white;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.site-header .contenedor h1:hover, .site-header .contenedor p:hover{
+    scale: 1.05;
+}
+
+/*Banner*/
+
+.banner-main{
+    background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url(https://painting-planet.com/images2/noche-estrellada-sobre-el-rodano-vincent-van-gogh_1.jpg);
+    width: 100%;
+    height: auto;
+    margin: 1rem 0;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-main h2{
+    padding: 2rem 0;
+}
+
+.banner-main div{
+    text-align: center;
+    padding-bottom: 4rem;
+  }
+
+  .banner-main div p{
+    font-size: 3.5rem;
+    color: #ffffff;
+}
+
+.banner-main div img{
+    border-radius: 8rem;
+    border: 1px solid #ffffff;
+}
+
+@media (min-width: 768px){
+
+    .banner-main div{
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    .banner-main div img{
+        padding: 1rem;
+        width: 50%;
+        height: auto;
+    }
+
+    .banner-main div p{
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        width: 50%;
+    }
+}
+
+.banner-main div img:hover, .banner-main div p:hover{
+    scale: .9;
+}
+
+/*BIOGRAFÍA*/
+#tribute-info h2{
+    color: #000000;
+}
+
+/*Biografia*/
+main{
+    margin-bottom: 5rem;
+}
+
+.contenido-biografia{
+    margin-bottom: 5rem;
+}
+
+.bio-info blockquote{
+    font-size: 2rem;
+}
+
+@media (min-width: 768px){
+
+    .bio-info{
+    display: flex;
+    margin-top: 2rem;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.bio-info img{
+    width: 40%;
+    max-width: 416px;
+    height: 30rem;
+    object-fit: cover;
+}
+
+.bio-info blockquote{
+    width: 60%;
+}
+    
+}
+
+/*Footer*/
+
+
+footer{
+    background-color: black;
+    text-align: center;
+}
+
+footer p{
+    font-size: 2rem;
+    color: white;
+    padding: 2rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+
+
+
+
+
+
